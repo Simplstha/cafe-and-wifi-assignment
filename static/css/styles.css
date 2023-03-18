@@ -1,0 +1,34 @@
+/* This CSS file will need to be added to the styling of 
+your web pages for the styles to be rendered. */
+
+body {
+background: linear-gradient(to bottom, #8D7B68, #472D2D);
+color: white;
+font-family: 'Courgette', cursive;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+a {
+    color: #ffc107;
+}
+
+.card_image {
+    height: 30rem;
+    width : 50rem;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: left;
+  margin: 0;
+  color: white;
+  background: linear-gradient(to bottom, #8D7B68, #472D2D);
+}
+
+.space-above {
+    margin-top: 20px;
+    padding-top: 20px;
+}

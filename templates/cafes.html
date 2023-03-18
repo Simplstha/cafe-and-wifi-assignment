@@ -1,0 +1,39 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}Restaurants{% endblock %}
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <h1>{{ cafe.name }}</h1>
+        <hr class="my-4">
+        <img style="width: 70rem; height: 40rem; margin:2rem 0" src="{{ cafe.img_url }}">
+        <br>
+        <a class="btn btn-warning btn-lg" href="{{ cafe.map_url }}" role="button">Show On Map!</a>
+        <hr class="my-4">
+        <h3>Does it have sockets? Ans. {{ cafe.has_sockets }}</h3>
+        <hr class="my-4">
+        <h3>Does it have toilets? Ans. {{ cafe.has_toilet }}</h3>
+        <hr class="my-4">
+        <h3>Does it have WiFi? Ans. {{ cafe.has_wifi }}</h3>
+        <hr class="my-4">
+        <h3>Can you take calls in here? Ans. {{ cafe.can_take_calls }}</h3>
+        <hr class="my-4">
+        <h3>How many seats does it have? Ans. {{ cafe.seats }}</h3>
+        <hr class="my-4">
+        <h3>Price of coffee? Ans. {{ cafe.coffee_price }}</h3>
+        <hr class="my-4">
+        <a class="btn btn-warning btn-lg" href="{{ url_for('home') }}" role="button">Home</a>
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
